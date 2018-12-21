@@ -1,34 +1,56 @@
-var answers = ["D", "A", "C", "A", "C", "B", "D", "A", "D", "B"],
+var answers = ["B", "A", "C", "A", "B", "B", "D", "D", "A", "C"],
   tot = answers.length;
 
-function getCheckedValue(radioName) {
-  var radios = document.getElementsByName(radioName); // Get radio group by-name
-  for (var y = 0; y < radios.length; y++) {
-    if (radios[y].checked) return radios[y].value; // return the checked value
+function check() {
+  var questOne = document.quiz.questOne.value;
+  var questTwo = document.quiz.questTwo.value;
+  var questThree = document.quiz.questThree.value;
+  var questFour = document.quiz.questFour.value;
+  var questFive = document.quiz.questFive.value;
+  var questSix = document.quiz.questsix.value;
+  var questSeven = document.quiz.questSeven.value;
+  var questEight = document.quiz.questEight.value;
+  var questNine = document.quiz.questNine.value;
+  var questTen = document.quiz.questTen.value;
+  var count = 0;
+
+  if (questOne == "B") {
+    count += 2;
   }
-}
+  if (questTwo == "A") {
+    count += 2;
+  }
+  if (questThree == "C") {
+    count += 2;
+  }
+  if (questFour == "A") {
+    count += 2;
+  }
+  if (questFive == "B") {
+    count += 2;
+  }
+  if (questSix == "B") {
+    count += 2;
+  }
+  if (questSeven == "D") {
+    count += 2;
+  }
+  if (questEight == "D") {
+    count += 2;
+  }
+  if (questNine == "A") {
+    count += 2;
+  }
+  if (questTen == "C") {
+    count += 2;
+  }
 
-function getScore() {
-  var score = 0;
-  debugger;
-  for (var i = 0; i < tot; i++)
-    if (getCheckedValue("question" + i) === answers[i]) score += 1; // increment only
-  return score;
-}
+  document.getElementById("after_submit").style.visibility = "visible";
 
-$(document).ready(function() {
-  $("form").show();
-  $(".result").hide();
-  $("form").submit(function(event) {
-    event.preventDefault();
-    $("form").hide();
-    $(".result").show();
-    returnScore();
-  });
-});
+  document.getElementById("number_count").innerHTML = "You got " + count + "%.";
 
-function returnScore() {
-  // alert("Your score is " + getScore() + "/" + tot);
-  document.getElementById("marks").innerHTML =
-    "Your score is " + "<br>" + getScore() + "/" + tot;
+  $("#button").hide();
+  $("#quiz").hide();
+  $("#number_count").show();
+  event.preventDefault();
 }
