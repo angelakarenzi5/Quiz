@@ -11,112 +11,116 @@
     <div class="container">
       <div class="jumbotron">
         <h1>JavaScript Quiz</h1>
-        <form id="quiz">
-          <p>
-            <strong>
-              Below are 10 multiple-choice questions, click on the answer of
-              your choice. Goodluck :)</strong
-            >
-          </p>
-          <p>1. JavaScript is a:</p>
-          <div class="one">
-            <input type="radio" name="questOne" value="A" /> Programming
-            language<br />
-            <input type="radio" name="questOne" value="B" /> Scripting
-            Language<br />
-            <input type="radio" name="questOne" value="C" /> Application
-            Language<br />
-            <input type="radio" name="questOne" value="D" /> None of these<br />
-          </div>
-          <p>2.JavaScript is a <strong> Side Scripting Language?</strong></p>
-          <div class="two">
-            <input type="radio" name="questTwo" value="A" /> Browser<br />
-            <input type="radio" name="questTwo" value="B" /> ISP<br />
-            <input type="radio" name="questTwo" value="C" /> None of these<br />
-            <input type="radio" name="questTwo" value="D" /> Server<br />
-          </div>
-          <p>3.JavaScript is designed for the following purpose</p>
-          <div class="three">
-            <input type="radio" name="questThree" value="A" /> To style HTML
-            pages<br />
-            <input type="radio" name="questThree" value="B" /> To execute Query
-            Related to DB on Server<br />
-            <input type="radio" name="questThree" value="C" /> To add
-            interactivity to html pages<br />
-            <input type="radio" name="questThree" value="D" /> To perform server
-            side scripting operation<br />
-          </div>
-          <p>4.JavaScript can be written</p>
-          <div class="four">
-            <input type="radio" name="questFour" value="A" /> Directly into HTML
-            pages<br />
-            <input type="radio" name="questFour" value="B" /> Directly into JS
-            file and included into HTML<br />
-            <input type="radio" name="questFour" value="C" /> Directly on the
-            Server Script<br />
-            <input type="radio" name="questFour" value="D" /> None of these<br />
-          </div>
-          <p>5.Local Browser used for validations on the Web Pages uses</p>
-          <div class="five">
-            <input type="radio" name="questFive" value="A" /> CSS<br />
-            <input type="radio" name="questFive" value="B" />JS<br />
-            <input type="radio" name="questFive" value="C" />Java<br />
-            <input type="radio" name="questFive" value="D" /> HTML<br />
-          </div>
-          <p>6.JavaScript code can be called by using</p>
-          <div class="six">
-            <input type="radio" name="questSix" value="A" /> RMI<br />
-            <input type="radio" name="questSix" value="B" /> Triggering Event<br />
-            <input type="radio" name="questSix" value="C" />
-            Function/Method<br />
-            <inpconsole.log(count);e="radio" name="questSix" value="D" />
-            Prepconsole.log(count);or<br />
-          </div>
-          console.log(count);
-          <p>7.State the correct place of JS Code inside HTML</p>
-          <div class="seven">
-            <input type="radio" name="questSeven" value="A" />Inside Body<br />
-            <input type="radio" name="questSeven" value="B" />Inside Single
-            JavaScript file<br />
-            <input type="radio" name="questSeven" value="C" />Inside Head<br />
-            <input type="radio" name="questSeven" value="D" />All of these<br />
-          </div>
-          <p>
-            8.Which of the following is correct about feautures of JavaScript
-          </p>
-          <div class="eight">
-            <input type="radio" name="questEight" value="A" /> JavaScript is
-            lightweight, interpreted programming language<br />
-            <input type="radio" name="questEight" value="B" /> JavaScript is
-            deigned for creating network-centric applications<br />
-            <input type="radio" name="questEight" value="C" /> JavaScript is
-            complementary to and integrated with Java<br />
-            <input type="radio" name="questEight" value="D" /> All of the
-            above<br />
-          </div>
-          <p>
-            9.Which built-in method calls a function for each element in the
-            array?
-          </p>
-          <div class="nine">
-            <input type="radio" name="questNine" value="A" /> While()<br />
-            <input type="radio" name="questNine" value="B" /> loop()<br />
-            <input type="radio" name="questNine" value="C" /> forEach()<br />
-            <input type="radio" name="questNine" value="D" /> None of above<br />
-          </div>
-          <p>
-            10.Which of the following function of string object combines the
-            text of two strings and returns a new strings
-          </p>
-          <div class="ten">
-            <input type="radio" name="questTen" value="A" /> add()<br />
-            <input type="radio" name="questTen" value="B" /> merge()<br />
-            <input type="radio" name="questTen" value="C" /> concat()<br />
-            <input type="radio" name="questTen" value="D" /> append()<br />
-          </div>
-          <input id="button" type="submit" />
-        </form>
-        <div id="click"><p id="numbers"></p></div>
+        <p id="numbers"></p>
+        <div id="myform">
+          <form id="quiz" class="quiz">
+            <p>
+              <strong>
+                Below are 10 multiple-choice questions, click on the answer of
+                your choice. Goodluck :)</strong
+              >
+            </p>
+
+            <p>1. JavaScript is a:</p>
+            <div class="one">
+              <input type="radio" name="questOne" value="1" /> Programming
+              language<br />
+              <input type="radio" name="questOne" value="2" /> Scripting
+              Language<br />
+              <input type="radio" name="questOne" value="3" /> Application
+              Language<br />
+              <input type="radio" name="questOne" value="4" /> None of these<br />
+            </div>
+            <p>2.JavaScript is a <strong> Side Scripting Language?</strong></p>
+            <div class="two">
+              <input type="radio" name="questTwo" value="1" /> Browser<br />
+              <input type="radio" name="questTwo" value="2" /> ISP<br />
+              <input type="radio" name="questTwo" value="3" /> None of these<br />
+              <input type="radio" name="questTwo" value="4" /> Server<br />
+            </div>
+            <p>3.JavaScript is designed for the following purpose</p>
+            <div class="three">
+              <input type="radio" name="questThree" value="1" /> To style HTML
+              pages<br />
+              <input type="radio" name="questThree" value="2" /> To execute
+              Query Related to DB on Server<br />
+              <input type="radio" name="questThree" value="3" /> To add
+              interactivity to html pages<br />
+              <input type="radio" name="questThree" value="4" /> To perform
+              server side scripting operation<br />
+            </div>
+            <p>4.JavaScript can be written</p>
+            <div class="four">
+              <input type="radio" name="questFour" value="1" /> Directly into
+              HTML pages<br />
+              <input type="radio" name="questFour" value="2" /> Directly into JS
+              file and included into HTML<br />
+              <input type="radio" name="questFour" value="3" /> Directly on the
+              Server Script<br />
+              <input type="radio" name="questFour" value="4" /> None of these<br />
+            </div>
+            <p>5.Local Browser used for validations on the Web Pages uses</p>
+            <div class="five">
+              <input type="radio" name="questFive" value="1" /> CSS<br />
+              <input type="radio" name="questFive" value="2" />JS<br />
+              <input type="radio" name="questFive" value="3" />Java<br />
+              <input type="radio" name="questFive" value="4" /> HTML<br />
+            </div>
+            <p>6.JavaScript code can be called by using</p>
+            <div class="six">
+              <input type="radio" name="questSix" value="1" /> RMI<br />
+              <input type="radio" name="questSix" value="2" /> Triggering
+              Event<br />
+              <input type="radio" name="questSix" value="3" />
+              Function/Method<br />
+              <inpconsole.log(count);e="radio" name="questSix" value="4" />
+              Prepconsole.log(count);or<br />
+            </div>
+            console.log(count);
+            <p>7.State the correct place of JS Code inside HTML</p>
+            <div class="seven">
+              <input type="radio" name="questSeven" value="1" />Inside Body<br />
+              <input type="radio" name="questSeven" value="2" />Inside Single
+              JavaScript file<br />
+              <input type="radio" name="questSeven" value="3" />Inside Head<br />
+              <input type="radio" name="questSeven" value="4" />All of these<br />
+            </div>
+            <p>
+              8.Which of the following is correct about feautures of JavaScript
+            </p>
+            <div class="eight">
+              <input type="radio" name="questEight" value="1" /> JavaScript is
+              lightweight, interpreted programming language<br />
+              <input type="radio" name="questEight" value="2" /> JavaScript is
+              deigned for creating network-centric applications<br />
+              <input type="radio" name="questEight" value="3" /> JavaScript is
+              complementary to and integrated with Java<br />
+              <input type="radio" name="questEight" value="4" /> All of the
+              above<br />
+            </div>
+            <p>
+              9.Which built-in method calls a function for each element in the
+              array?
+            </p>
+            <div class="nine">
+              <input type="radio" name="questNine" value="1" /> While()<br />
+              <input type="radio" name="questNine" value="2" /> loop()<br />
+              <input type="radio" name="questNine" value="3" /> forEach()<br />
+              <input type="radio" name="questNine" value="4" /> None of above<br />
+            </div>
+            <p>
+              10.Which of the following function of string object combines the
+              text of two strings and returns a new strings
+            </p>
+            <div class="ten">
+              <input type="radio" name="questTen" value="1" /> add()<br />
+              <input type="radio" name="questTen" value="2" /> merge()<br />
+              <input type="radio" name="questTen" value="3" /> concat()<br />
+              <input type="radio" name="questTen" value="4" /> append()<br />
+              <input id="button" type="submit" value="submit" />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
