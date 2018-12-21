@@ -1,6 +1,3 @@
-var answers = ["B", "A", "C", "A", "B", "B", "D", "D", "A", "C"],
-  tot = answers.length;
-
 function check() {
   var questOne = document.quiz.questOne.value;
   var questTwo = document.quiz.questTwo.value;
