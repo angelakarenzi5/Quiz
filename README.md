@@ -11,7 +11,7 @@ The purpose of this project is to be able to show a clear understarting of what 
 ## Setup/Installation Requirements
 
 Refer to git clone:https://github.com/angelakarenzi5/Self-portifolio.git for details of code, therefore, you need a code editor.
-You need a browser, to open https://angelakarenzi5.github.io/Self-portifolio/homepage.html in order to view my webpage.
+You need a browser, to open https://angelakarenzi5.github.io/Quiz/in order to view my webpage.
 
 ## Known Bugs
 
