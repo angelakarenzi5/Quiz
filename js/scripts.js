@@ -46,7 +46,7 @@ function check() {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $("#numbers").text("You got " + check() + "%");
+    $("#numbers").text("You got" + check() + "/20");
     $("#test").hide();
     $("#numbers").show();
   });
