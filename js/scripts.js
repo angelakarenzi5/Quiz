@@ -1,53 +1,53 @@
+var count = 0;
 function check() {
-  var questOne = document.getElementById("questOne").value;
-  var questTwo = document.getElementById("questTwo").value;
-  var questThree = document.getElementById("questThree").value;
-  var questFour = document.getElementById("questFour").value;
-  var questFive = document.getElementById("questFive").value;
-  var questSix = document.getElementById("questSix").value;
+  var questOne = document.quiz.questOne.value;
+  var questTwo = document.quiz.questTwo.value;
+  var questThree = document.quiz.questThree.value;
+  var questFour = document.quiz.questFour.value;
+  var questFive = document.quiz.questFive.value;
+  var questSix = document.quiz.questSix.value;
   var questSeven = document.getElementById("questSeven").value;
   var questEight = document.getElementById("questEight").value;
   var questNine = document.getElementById("questNine").value;
   var questTen = document.getElementById("questTen").value;
-  var count = 0;
 
   if (questOne == "B") {
-    count += 1;
+    count += 2;
   }
   if (questTwo == "A") {
-    count += 1;
+    count += 2;
   }
   if (questThree == "C") {
-    count += 1;
+    count += 2;
   }
   if (questFour == "A") {
-    count += 1;
+    count += 2;
   }
   if (questFive == "B") {
-    count += 1;
+    count += 2;
   }
   if (questSix == "B") {
-    count += 1;
+    count += 2;
   }
   if (questSeven == "D") {
-    count += 1;
+    count += 2;
   }
   if (questEight == "D") {
-    count += 1;
+    count += 2;
   }
   if (questNine == "A") {
-    count += 1;
+    count += 2;
   }
   if (questTen == "C") {
-    count += 1;
+    count += 2;
   }
   return count;
 }
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $("#numbers").text("You got" + check() + "/20");
-    $("#test").hide();
+    $("#numbers").text("You got" + count + "/20");
+    $("#quiz").hide();
     $("#numbers").show();
   });
 });
