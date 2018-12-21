@@ -6,10 +6,10 @@ function check() {
   var questFour = document.quiz.questFour.value;
   var questFive = document.quiz.questFive.value;
   var questSix = document.quiz.questSix.value;
-  var questSeven = document.getElementById("questSeven").value;
-  var questEight = document.getElementById("questEight").value;
-  var questNine = document.getElementById("questNine").value;
-  var questTen = document.getElementById("questTen").value;
+  var questSeven = document.quiz.questSeven.value;
+  var questEight = document.quiz.questEight.value;
+  var questNine = document.quiz.questNine.value;
+  var questTen = document.quiz.questTen.value;
 
   if (questOne == "B") {
     count += 2;
