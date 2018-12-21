@@ -42,12 +42,12 @@ function check() {
     count += 2;
   }
 
-  document.getElementById("after_submit").style.visibility = "visible";
+  document.getElementById("click").style.visibility = "visible";
 
-  document.getElementById("number_count").innerHTML = "You got " + count + "%.";
+  document.getElementById("numbers").innerHTML = "You got " + count + "/20";
 
   $("#button").hide();
-  $("#quiz").hide();
-  $("#number_count").show();
+  $("#test").hide();
+  $("#numbers").show();
   event.preventDefault();
 }
