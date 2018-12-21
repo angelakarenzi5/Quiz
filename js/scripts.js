@@ -1,53 +1,53 @@
 function check() {
-  var questOne = document.quiz.questOne.value;
-  var questTwo = document.quiz.questTwo.value;
-  var questThree = document.quiz.questThree.value;
-  var questFour = document.quiz.questFour.value;
-  var questFive = document.quiz.questFive.value;
-  var questSix = document.quiz.questsix.value;
-  var questSeven = document.quiz.questSeven.value;
-  var questEight = document.quiz.questEight.value;
-  var questNine = document.quiz.questNine.value;
-  var questTen = document.quiz.questTen.value;
-  var count = 1;
+  var questOne = document.getElementById("questOne").value;
+  var questTwo = document.getElementById("questTwo").value;
+  var questThree = document.getElementById("questThree").value;
+  var questFour = document.getElementById("questFour").value;
+  var questFive = document.getElementById("questFive").value;
+  var questSix = document.getElementById("questSix").value;
+  var questSeven = document.getElementById("questSeven").value;
+  var questEight = document.getElementById("questEight").value;
+  var questNine = document.getElementById("questNine").value;
+  var questTen = document.getElementById("questTen").value;
+  var count = 0;
 
   if (questOne == "B") {
-    count += 2;
+    count += 1;
   }
   if (questTwo == "A") {
-    count += 2;
+    count += 1;
   }
   if (questThree == "C") {
-    count += 2;
+    count += 1;
   }
   if (questFour == "A") {
-    count += 2;
+    count += 1;
   }
   if (questFive == "B") {
-    count += 2;
+    count += 1;
   }
   if (questSix == "B") {
-    count += 2;
+    count += 1;
   }
   if (questSeven == "D") {
-    count += 2;
+    count += 1;
   }
   if (questEight == "D") {
-    count += 2;
+    count += 1;
   }
   if (questNine == "A") {
-    count += 2;
+    count += 1;
   }
   if (questTen == "C") {
-    count += 2;
+    count += 1;
   }
-
-  document.getElementById("click").style.visibility = "visible";
-
-  document.getElementById("numbers").innerHTML = "You got " + count + "/20";
-
-  $("#button").hide();
-  $("#test").hide();
-  $("#numbers").show();
-  event.preventDefault();
+  return count;
 }
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    $("#numbers").text("You got " + check() + "%");
+    $("#test").hide();
+    $("#numbers").show();
+  });
+});
