@@ -1,6 +1,7 @@
 body {
   background-color: lightseagreen;
+  line-height: 2.5;
 }
-#submit{
-    bor
+#submit > input {
+  background-color: lightskyblue;
 }
