@@ -1,8 +1,7 @@
 body {
   background-color: lightseagreen;
   line-height: 2.5;
-  padding-left: 100%;
-  padding-right: 100%;
+  margin: 0;
 }
 #submit > input {
   background-color: lightskyblue;

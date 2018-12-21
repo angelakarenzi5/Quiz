@@ -10,7 +10,7 @@ function check() {
   var questEight = document.quiz.questEight.value;
   var questNine = document.quiz.questNine.value;
   var questTen = document.quiz.questTen.value;
-
+console.log(questOne)
   if (questOne == "B") {
     count += 2;
   }
