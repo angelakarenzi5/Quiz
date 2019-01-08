@@ -6,12 +6,11 @@
 
 ## Description
 
-The purpose of this project is to be able to show a clear understarting of what was taught in week one. Week one of prep had a lot of content, the content learnt is displayed in the project I created. The application is a basic description of who Angela Uwase Karenzi is, what her hobbies are and then finally tangible proof of what she was taught throughout the week.
-
+The purpose of this project is to display the end result of what was taught in week 3, we went over a week of learning how forms work, thus ended up creating our own forms
 ## Setup/Installation Requirements
 
-Refer to git clone: https://github.com/angelakarenzi5/Quiz.git details of code, therefore, you need a code editor.
-You need a browser, to open https://angelakarenzi5.github.io/Quiz/in order to view my webpage.
+Refer to git clone: https://github.com/angelakarenzi5/Quiz.gitdetails of code, therefore, you need a code editor.
+You need a browser, to open https://angelakarenzi5.github.io/Quiz/ order to view my webpage.
 
 ## Known Bugs
 
@@ -23,6 +22,23 @@ No issues whatsoever
 2.CSS to style my codes,
 3.JavaScript to make my webpages interactive,
 4.Bootstrap.css
+## BDD
+#### input 
+if the answer checked is correct, 
+#### output
+award 2 marks, 
+#### input
+if the answer checked is incorrect,
+#### output
+award 0 marks,
+#### input
+if all answers are correct,
+#### output
+award 20 marks
+#### input
+For every correct answer 
+#### output 
+award 2 marks for every answer
 
 ## Support and contact details
 
