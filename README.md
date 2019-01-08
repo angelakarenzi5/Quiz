@@ -9,7 +9,7 @@
 The purpose of this project is to display the end result of what was taught in week 3, we went over a week of learning how forms work, thus ended up creating our own forms
 ## Setup/Installation Requirements
 
-Refer to git clone: https://github.com/angelakarenzi5/Quiz.gitdetails of code, therefore, you need a code editor.
+Refer to git clone: https://github.com/angelakarenzi5/Quiz.git details of code, therefore, you need a code editor.
 You need a browser, to open https://angelakarenzi5.github.io/Quiz/ order to view my webpage.
 
 ## Known Bugs
